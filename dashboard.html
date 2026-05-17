@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - SDU Scholarship</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-left">
+            <img src="logo.png" alt="Logo" class="logo-img">
+            <span class="website-title">SDU Scholarship Application System</span>
+        </div>
+        <nav class="header-right">
+            <a href="loggedin.html" class="nav-link">HOME</a>
+            <a href="dashboard.html" class="nav-link active-nav">DASHBOARD</a>
+            <a href="records.html" class="nav-link">RECORDS</a>
+            <a href="apply.html" class="nav-link">APPLY</a>
+            <a href="auth.html" class="nav-link">LOGOUT</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-inner-border">
+            
+            <div class="dashboard-header">
+                <h2>Welcome back, Emperador, Wrenzo</h2>
+                <p>Track your scholarship applications and discover new opportunities</p>
+            </div>
+
+            <div class="stats-container">
+                <div class="stat-card">
+                    <p class="stat-title">Total Applications</p>
+                    <p class="stat-number bold-black">2</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-title">Pending</p>
+                    <p class="stat-number text-yellow">1</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-title">Approved</p>
+                    <p class="stat-number text-green">1</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-title">Rejected</p>
+                    <p class="stat-number text-red">0</p>
+                </div>
+            </div>
+
+            <div class="section-header">
+                <h3>Recent Applications</h3>
+                <a href="apply.html" class="action-btn small-btn">+ New Application</a>
+            </div>
+
+            <div class="applications-container">
+                
+                <div class="app-card">
+                    <div class="app-card-top">
+                        <div class="app-info">
+                            <h4>Academic Scholarship</h4>
+                            <p>Award Amount: 18,000 PHP &bull; Deadline: 5/15/2026</p>
+                        </div>
+                        <div class="app-status badge-pending">Pending</div>
+                    </div>
+                    
+                    <div class="progress-container">
+                        <div class="progress-text-row">
+                            <span>Application Progress</span>
+                            <span class="progress-percentage">75%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-card-top">
+                        <div class="app-info">
+                            <h4>Community Advocate Scholarship</h4>
+                            <p>Award Amount: 8,000 PHP &bull; Deadline: 4/30/2026</p>
+                        </div>
+                        <div class="app-status badge-approved">Approved</div>
+                    </div>
+                    
+                    <div class="progress-container">
+                        <div class="progress-text-row">
+                            <span>Application Progress</span>
+                            <span class="progress-percentage">100%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="view-all-container">
+                <a href="records.html" class="action-btn outline-btn">View All Applications</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; SDU Scholarship Application System</p>
+    </footer>
+
+</body>
+</html>

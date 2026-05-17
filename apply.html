@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply - SDU Scholarship</title>
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-left">
+            <img src="logo.png" alt="Logo" class="logo-img">
+            <span class="website-title">SDU Scholarship Application System</span>
+        </div>
+        <nav class="header-right">
+            <a href="loggedin.html" class="nav-link">HOME</a>
+            <a href="dashboard.html" class="nav-link">DASHBOARD</a>
+            <a href="records.html" class="nav-link">RECORDS</a>
+            <a href="apply.html" class="nav-link active-nav">APPLY</a>
+            <a href="auth.html" class="nav-link">LOGOUT</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-inner-border">
+            
+            <div class="apply-header-container">
+                <div class="page-header">
+                    <h2>Scholarship Application</h2>
+                    <p>Complete the form below to submit your application</p>
+                </div>
+                
+                <div class="photo-upload-box">
+                    <p>UPLOAD 2x2 HERE</p>
+                    <label class="upload-btn">
+                        Upload
+                        <input type="file" accept="image/*" style="display: none;">
+                    </label>
+                </div>
+            </div>
+
+            <form action="dashboard.html" class="application-form">
+                
+                <div class="content-card">
+                    <div class="card-header">
+                        <h3>Scholarship Selection</h3>
+                        <p>Choose the scholarship you want to apply for</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="scholarshipType">Scholarship Type *</label>
+                        <select id="scholarshipType" class="form-control" required>
+                            <option value="" disabled selected>Select a scholarship</option>
+                            <option value="academic">Academic Scholarship</option>
+                            <option value="community">Community Advocate Scholarship</option>
+                            <option value="need-based">Need-Based Scholarship</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <div class="card-header">
+                        <h3>Personal Information</h3>
+                        <p>Provide your basic details</p>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group flex-1">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" class="form-control" required>
+                        </div>
+                        <div class="form-group flex-1">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group flex-1">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" class="form-control" placeholder="wrenzoemperador@gmail.com" required>
+                        </div>
+                        <div class="form-group flex-1">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dob">Date of Birth *</label>
+                        <input type="date" id="dob" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="street">Street Address *</label>
+                        <input type="text" id="street" class="form-control" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group flex-1">
+                            <label for="city">City *</label>
+                            <input type="text" id="city" class="form-control" required>
+                        </div>
+                        <div class="form-group flex-1">
+                            <label for="state">State *</label>
+                            <input type="text" id="state" class="form-control" required>
+                        </div>
+                        <div class="form-group flex-1">
+                            <label for="zip">Zip Code *</label>
+                            <input type="text" id="zip" class="form-control" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <div class="card-header">
+                        <h3>Academic Information</h3>
+                        <p>Tell us about your education</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="school">Current School/University *</label>
+                        <input type="text" id="school" class="form-control" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group flex-1">
+                            <label for="gpa">GPA *</label>
+                            <input type="text" id="gpa" class="form-control" required>
+                        </div>
+                        <div class="form-group flex-1">
+                            <label for="gradeLevel">Grade Level *</label>
+                            <select id="gradeLevel" class="form-control" required>
+                                <option value="" disabled selected>Select grade level</option>
+                                <option value="1st Year">1st Year</option>
+                                <option value="2nd Year">2nd Year</option>
+                                <option value="3rd Year">3rd Year</option>
+                                <option value="4th Year">4th Year</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="major">Intended Major/Field of Study *</label>
+                        <input type="text" id="major" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <div class="card-header">
+                        <h3>Documents</h3>
+                        <p>Upload required documents</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="transcript">Official Transcript (PDF) *</label>
+                        <input type="file" id="transcript" class="form-control file-input" accept=".pdf">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="recommendation">Letter of Recommendation (PDF) *</label>
+                        <input type="file" id="recommendation" class="form-control file-input" accept=".pdf">
+                    </div>
+                </div>
+
+                <div class="content-card agreement-card">
+                    <label class="checkbox-label">
+                        <input type="checkbox" required>
+                        <span>I agree to the terms and conditions and certify that all information provided is accurate *</span>
+                    </label>
+                </div>
+
+                <div class="form-actions">
+                    <a href="dashboard.html" class="action-btn cancel-btn">Cancel</a>
+                    <button type="submit" class="action-btn submit-btn">Submit Application</button>
+                </div>
+
+            </form>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; SDU Scholarship Application System</p>
+    </footer>
+
+</body>
+</html>

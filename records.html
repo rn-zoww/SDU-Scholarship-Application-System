@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Records - SDU Scholarship</title>
+    <link rel="stylesheet" href="records.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-left">
+            <img src="logo.png" alt="Logo" class="logo-img">
+            <span class="website-title">SDU Scholarship Application System</span>
+        </div>
+        <nav class="header-right">
+            <a href="loggedin.html" class="nav-link">HOME</a>
+            <a href="dashboard.html" class="nav-link">DASHBOARD</a>
+            <a href="records.html" class="nav-link active-nav">RECORDS</a>
+            <a href="apply.html" class="nav-link">APPLY</a>
+            <a href="auth.html" class="nav-link">LOGOUT</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-inner-border">
+            
+            <div class="page-header">
+                <h2>Application Records</h2>
+                <p>View and manage all your scholarship applications</p>
+            </div>
+
+            <div class="content-card filter-card">
+                <div class="card-header">
+                    <h3>Filter & Search</h3>
+                    <p>Find specific applications using filters below</p>
+                </div>
+                
+                <div class="filter-controls">
+                    <input type="text" class="search-input" placeholder="Search scholarships...">
+                    
+                    <select class="status-select">
+                        <option value="all">All Status</option>
+                        <option value="pending">Pending</option>
+                        <option value="approved">Approved</option>
+                        <option value="rejected">Rejected</option>
+                    </select>
+
+                    <button class="action-btn remove-filter-btn">Remove Filter</button>
+                </div>
+            </div>
+
+            <div class="content-card table-card">
+                <div class="table-responsive">
+                    <table class="records-table">
+                        <thead>
+                            <tr>
+                                <th>Scholarship Name</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                                <th>Applied Date</th>
+                                <th>Deadline</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Academic Scholarship</td>
+                                <td>18,000 PHP</td>
+                                <td><span class="app-status badge-pending">Pending</span></td>
+                                <td>3/15/2026</td>
+                                <td>5/15/2026</td>
+                            </tr>
+                            <tr>
+                                <td>Community Advocate Scholarship</td>
+                                <td>8,000 PHP</td>
+                                <td><span class="app-status badge-approved">Approved</span></td>
+                                <td>2/20/2026</td>
+                                <td>4/30/2026</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-footer">
+                    <p>Showing 2 of 2 applications</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; SDU Scholarship Application System</p>
+    </footer>
+
+</body>
+</html>

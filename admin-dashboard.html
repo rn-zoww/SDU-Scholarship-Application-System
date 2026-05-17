@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - SDU Scholarship System</title>
+    <link rel="stylesheet" href="admin-dashboard.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-left">
+            <img src="logo.png" alt="Logo" class="logo-img">
+            <span class="website-title">SDU Scholarship Application System</span>
+        </div>
+        <nav class="header-right">
+            <a href="admin-loggedin.html" class="nav-link">HOME</a>
+            <a href="admin-dashboard.html" class="nav-link active-nav">DASHBOARD</a>
+            <a href="admin-records.html" class="nav-link">RECORDS</a>
+            <a href="admin-review.html" class="nav-link">REVIEW</a>
+            <a href="admin-auth.html" class="nav-link">LOGOUT</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-inner-border">
+            
+            <div class="dashboard-header">
+                <h2>Welcome back, Mr. Emperador, Wrenzo</h2>
+                <p>Oversee applicants, review submissions, and manage scholarship programs.</p>
+            </div>
+
+            <div class="stats-container">
+                <div class="stat-card">
+                    <p class="stat-title">Total Applications (Global)</p>
+                    <p class="stat-number bold-black">364</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-title">Pending Review</p>
+                    <p class="stat-number text-yellow">49</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-title">Approved Scholars</p>
+                    <p class="stat-number text-green">298</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-title">Rejected Applicants</p>
+                    <p class="stat-number text-red">17</p>
+                </div>
+            </div>
+
+            <div class="section-header">
+                <h3>Recent Submissions</h3>
+                <a href="manage-programs.html" class="action-btn small-btn">+ Manage Programs</a>
+            </div>
+
+            <div class="applications-container">
+                
+                <div class="app-card">
+                    <div class="app-card-top">
+                        <div class="app-info">
+                            <h4>Academic Scholarship - Emperador, Wrenzo</h4>
+                            <p>ID: 1045 | Status: Pending Review | Submitted: 4/10/2026</p>
+                        </div>
+                        <div class="app-status badge-pending">Pending</div>
+                    </div>
+                    
+                    <div class="progress-container">
+                        <div class="progress-text-row">
+                            <span>Review Progress</span>
+                            <span class="progress-percentage">75%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-card-top">
+                        <div class="app-info">
+                            <h4>Community Advocate Scholarship - Emperador, Wrenzo</h4>
+                            <p>ID: 1044 | Status: Approved | Submitted: 4/05/2026</p>
+                        </div>
+                        <div class="app-status badge-approved">Approved</div>
+                    </div>
+                    
+                    <div class="progress-container">
+                        <div class="progress-text-row">
+                            <span>Review Progress</span>
+                            <span class="progress-percentage">100%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="view-all-container">
+                <a href="admin-records.html" class="action-btn outline-btn">View All Submissions</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; SDU Scholarship Application System</p>
+    </footer>
+
+</body>
+</html>
