@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Records - SDU Scholarship System</title>
+    <link rel="stylesheet" href="mockadmin-records.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-left">
+            <img src="logo.png" alt="Logo" class="logo-img">
+            <span class="website-title">SDU Scholarship Application System</span>
+        </div>
+        <nav class="header-right">
+            <a href="admin-loggedin.html" class="nav-link">HOME</a>
+            <a href="mockadmin-dashboard.html" class="nav-link">DASHBOARD</a>
+            <a href="mockadmin-records.html" class="nav-link active-nav">RECORDS</a>
+            <a href="mockadmin-review.html" class="nav-link">REVIEW</a>
+            <a href="admin-auth.html" class="nav-link">LOGOUT</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-inner-border">
+            
+            <section class="charts-section">
+                
+                <div class="chart-card">
+                    <h4>Academic Scholars</h4>
+                    <div class="bar-graph">
+                        <div class="bar" style="height: 60px;"></div>
+                        <div class="bar" style="height: 90px;"></div>
+                        <div class="bar" style="height: 40px;"></div>
+                    </div>
+                </div>
+
+                <div class="chart-card">
+                    <h4>Community Advocate Scholars</h4>
+                    <div class="bar-graph">
+                        <div class="bar" style="height: 50px;"></div>
+                        <div class="bar" style="height: 70px;"></div>
+                        <div class="bar" style="height: 85px;"></div>
+                    </div>
+                </div>
+
+                <div class="chart-card">
+                    <h4>Need-Based Scholars</h4>
+                    <div class="bar-graph">
+                        <div class="bar" style="height: 80px;"></div>
+                        <div class="bar" style="height: 80px;"></div>
+                        <div class="bar" style="height: 75px;"></div>
+                    </div>
+                </div>
+
+                <div class="chart-card">
+                    <div class="pie-chart-container">
+                        <div class="pie-chart"></div>
+                        <div class="legend">
+                            <div class="legend-item"><span class="swatch green"></span> Approved (298)</div>
+                            <div class="legend-item"><span class="swatch yellow"></span> Pending (50)</div>
+                            <div class="legend-item"><span class="swatch red"></span> Rejected (17)</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="table-container">
+                <div class="table-responsive">
+                    <table class="records-table">
+                        <thead>
+                            <tr>
+                                <th>Student ID</th>
+                                <th>Application Form ID</th>
+                                <th>Full Name</th>
+                                <th>GPA</th>
+                                <th>Cluster</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>STUD-004</td>
+                                <td>FORM-1046</td>
+                                <td>Dela Cruz, Juan</td>
+                                <td>3.50</td>
+                                <td>CL-03</td>
+                            </tr>
+                            <tr>
+                                <td>STUD-001</td>
+                                <td>FORM-1045</td>
+                                <td>Emperador, Wrenzo</td>
+                                <td>3.75</td>
+                                <td>CL-01</td>
+                            </tr>
+                            <tr>
+                                <td>STUD-001</td>
+                                <td>FORM-1044</td>
+                                <td>Emperador, Wrenzo</td>
+                                <td>3.75</td>
+                                <td>CL-01</td>
+                            </tr>
+                            <tr>
+                                <td>STUD-003</td>
+                                <td>FORM-1043</td>
+                                <td>Clara, Maria</td>
+                                <td>2.00</td>
+                                <td>CL-03</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; SDU Scholarship Application System</p>
+    </footer>
+
+</body>
+</html>

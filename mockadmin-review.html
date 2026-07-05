@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Review Queue - SDU Scholarship System</title>
+    <link rel="stylesheet" href="mockadmin-review.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-left">
+            <img src="logo.png" alt="Logo" class="logo-img">
+            <span class="website-title">SDU Scholarship Application System</span>
+        </div>
+        <nav class="header-right">
+            <a href="admin-loggedin.html" class="nav-link">HOME</a>
+            <a href="mockadmin-dashboard.html" class="nav-link">DASHBOARD</a>
+            <a href="mockadmin-records.html" class="nav-link">RECORDS</a>
+            <a href="mockadmin-review.html" class="nav-link active-nav">REVIEW</a>
+            <a href="admin-auth.html" class="nav-link">LOGOUT</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-inner-border">
+            
+            <div class="page-header">
+                <h2>Review Queue</h2>
+                <p>A list of applications waiting for review</p>
+            </div>
+
+            <div class="content-card filter-card">
+                <div class="filter-controls">
+                    <input type="text" class="search-input" placeholder="Search student...">
+                    
+                    <select class="status-select">
+                        <option value="all">All Clusters</option>
+                        <option value="CL-01">CL-01</option>
+                        <option value="CL-02">CL-02</option>
+                        <option value="CL-03">CL-03</option>
+                    </select>
+
+                    <select class="status-select">
+                        <option value="newest">Newest</option>
+                        <option value="oldest">Oldest</option>
+                    </select>
+
+                    <button class="action-btn filter-btn">Apply Filters</button>
+                </div>
+            </div>
+
+            <div class="applications-container">
+                
+                <div class="app-card">
+                    <div class="app-card-top">
+                        <div class="app-info">
+                            <h4>Student: Dela Cruz, Juan</h4>
+                            <p>ID: STUD-004 | Form: FORM-1046 | Cluster: CL-03 | Applied: 4/12/2026</p>
+                        </div>
+                        <a href="#appPreviewModal3" class="action-btn small-btn">View</a>
+                    </div>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-card-top">
+                        <div class="app-info">
+                            <h4>Student: Emperador, Wrenzo</h4>
+                            <p>ID: STUD-001 | Form: FORM-1045 | Cluster: CL-01 | Applied: 4/10/2026</p>
+                        </div>
+                        <a href="#appPreviewModal1" class="action-btn small-btn">View</a>
+                    </div>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-card-top">
+                        <div class="app-info">
+                            <h4>Student: Clara, Maria</h4>
+                            <p>ID: STUD-003 | Form: FORM-1043 | Cluster: CL-03 | Applied: 4/05/2026</p>
+                        </div>
+                        <a href="#appPreviewModal2" class="action-btn small-btn">View</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; SDU Scholarship Application System</p>
+    </footer>
+
+    <div id="appPreviewModal1" class="modal-overlay">
+        <div class="modal-content">
+            <a href="#" class="close-modal">&times;</a>
+            <div class="modal-body-scroll">
+                <div class="apply-header-container">
+                    <div class="page-header">
+                        <h2>Application Review (FORM-1045)</h2>
+                        <p>Reviewing submission for Wrenzo Emperador</p>
+                    </div>
+                    <div class="photo-upload-box">
+                        <p>SUBMITTED 2x2</p>
+                        <label class="upload-btn">View Photo</label>
+                    </div>
+                </div>
+
+                <div class="application-form">
+                    <div class="content-card">
+                        <div class="card-header">
+                            <h3>Scholarship Selection</h3>
+                        </div>
+                        <div class="form-group">
+                            <label>Scholarship Type</label>
+                            <select class="form-control" disabled>
+                                <option selected>Academic Scholarship (CL-01)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="card-header">
+                            <h3>Personal Information</h3>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group flex-1">
+                                <label>First Name</label>
+                                <input type="text" class="form-control" value="Wrenzo" readonly>
+                            </div>
+                            <div class="form-group flex-1">
+                                <label>Last Name</label>
+                                <input type="text" class="form-control" value="Emperador" readonly>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group flex-1">
+                                <label>Email</label>
+                                <input type="email" class="form-control" value="wrenzoemperador@gmail.com" readonly>
+                            </div>
+                            <div class="form-group flex-1">
+                                <label>Phone Number</label>
+                                <input type="tel" class="form-control" value="09123456789" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Date of Birth</label>
+                            <input type="text" class="form-control" value="05/15/2005" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label>Street Address</label>
+                            <input type="text" class="form-control" value="123 University Ave" readonly>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group flex-1">
+                                <label>City</label>
+                                <input type="text" class="form-control" value="Pasay City" readonly>
+                            </div>
+                            <div class="form-group flex-1">
+                                <label>State / Region</label>
+                                <input type="text" class="form-control" value="Metro Manila" readonly>
+                            </div>
+                            <div class="form-group flex-1">
+                                <label>Zip Code</label>
+                                <input type="text" class="form-control" value="1300" readonly>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="card-header">
+                            <h3>Academic Information</h3>
+                        </div>
+                        <div class="form-group">
+                            <label>Current School/University</label>
+                            <input type="text" class="form-control" value="SD University" readonly>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group flex-1">
+                                <label>GPA</label>
+                                <input type="text" class="form-control" value="3.75" readonly>
+                            </div>
+                            <div class="form-group flex-1">
+                                <label>Grade Level</label>
+                                <select class="form-control" disabled>
+                                    <option selected>2nd Year</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Intended Major/Field of Study</label>
+                            <input type="text" class="form-control" value="Computer Engineering" readonly>
+                        </div>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="card-header">
+                            <h3>Documents</h3>
+                        </div>
+                        <div class="form-group">
+                            <label>Official Transcript (PDF)</label>
+                            <div class="form-control document-view">
+                                <span class="doc-name">W_Emperador_Transcript.pdf</span>
+                                <a href="#" class="doc-link">Open File</a>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Letter of Recommendation (PDF)</label>
+                            <div class="form-control document-view">
+                                <span class="doc-name">W_Emperador_Recommendation.pdf</span>
+                                <a href="#" class="doc-link">Open File</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-actions admin-review-actions">
+                        <a href="#" class="action-btn reject-btn">Reject</a>
+                        <a href="#" class="action-btn process-btn">Process</a>
+                        <a href="#" class="action-btn approve-btn">Approve</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="appPreviewModal2" class="modal-overlay">
+        <div class="modal-content">
+            <a href="#" class="close-modal">&times;</a>
+            <div class="modal-body-scroll">
+                <div class="apply-header-container">
+                    <div class="page-header">
+                        <h2>Application Review (FORM-1043)</h2>
+                        <p>Reviewing submission for Maria Clara</p>
+                    </div>
+                    <div class="photo-upload-box">
+                        <p>SUBMITTED 2x2</p>
+                        <label class="upload-btn">View Photo</label>
+                    </div>
+                </div>
+
+                <div class="application-form">
+                    <div class="content-card">
+                        <div class="card-header">
+                            <h3>Scholarship Selection</h3>
+                        </div>
+                        <div class="form-group">
+                            <label>Scholarship Type</label>
+                            <select class="form-control" disabled>
+                                <option selected>Need-Based Scholarship (CL-03)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="card-header">
+                            <h3>Personal Information</h3>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group flex-1">
+                                <label>First Name</label>
+                                <input type="text" class="form-control" value="Maria" readonly>
+                            </div>
+                            <div class="form-group flex-1">
+                                <label>Last Name</label>
+                                <input type="text" class="form-control" value="Clara" readonly>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group flex-1">
+                                <label>Email</label>
+                                <input type="email" class="form-control" value="maria.clara@gmail.com" readonly>
+                            </div>
+                            <div class="form-group flex-1">
+                                <label>Phone Number</label>
+                                <input type="tel" class="form-control" value="09198765432" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Date of Birth</label>
+                            <input type="text" class="form-control" value="10/20/2005" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label>Street Address</label>
+                            <input type="text" class="form-control" value="456 Rizal Avenue" readonly>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group flex-1">
+                                <label>City</label>
+                                <input type="text" class="form-control" value="Manila City" readonly>
+                            </div>
+                            <div class="form-group flex-1">
+                                <label>State / Region</label>
+                                <input type="text" class="form-control" value="Metro Manila" readonly>
+                            </div>
+                            <div class="form-group flex-1">
+                                <label>Zip Code</label>
+                                <input type="text" class="form-control" value="1000" readonly>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="card-header">
+                            <h3>Academic Information</h3>
+                        </div>
+                        <div class="form-group">
+                            <label>Current School/University</label>
+                            <input type="text" class="form-control" value="SD University" readonly>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group flex-1">
+                                <label>GPA</label>
+                                <input type="text" class="form-control" value="2.00" readonly>
+                            </div>
+                            <div class="form-group flex-1">
+                                <label>Grade Level</label>
+                                <select class="form-control" disabled>
+                                    <option selected>1st Year</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Intended Major/Field of Study</label>
+                            <input type="text" class="form-control" value="Accounting" readonly>
+                        </div>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="card-header">
+                            <h3>Documents</h3>
+                        </div>
+                        <div class="form-group">
+                            <label>Official Transcript (PDF)</label>
+                            <div class="form-control document-view">
+                                <span class="doc-name">M_Clara_Transcript.pdf</span>
+                                <a href="#" class="doc-link">Open File</a>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Letter of Recommendation (PDF)</label>
+                            <div class="form-control document-view">
+                                <span class="doc-name">M_Clara_Recommendation.pdf</span>
+                                <a href="#" class="doc-link">Open File</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-actions admin-review-actions">
+                        <a href="#" class="action-btn reject-btn">Reject</a>
+                        <a href="#" class="action-btn process-btn">Process</a>
+                        <a href="#" class="action-btn approve-btn">Approve</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="appPreviewModal3" class="modal-overlay">
+        <div class="modal-content">
+            <a href="#" class="close-modal">&times;</a>
+            <div class="modal-body-scroll">
+                <div class="apply-header-container">
+                    <div class="page-header">
+                        <h2>Application Review (FORM-1046)</h2>
+                        <p>Reviewing submission for Juan Dela Cruz</p>
+                    </div>
+                    <div class="photo-upload-box">
+                        <p>SUBMITTED 2x2</p>
+                        <label class="upload-btn">View Photo</label>
+                    </div>
+                </div>
+
+                <div class="application-form">
+                    <div class="content-card">
+                        <div class="card-header">
+                            <h3>Scholarship Selection</h3>
+                        </div>
+                        <div class="form-group">
+                            <label>Scholarship Type</label>
+                            <select class="form-control" disabled>
+                                <option selected>Need-Based Scholarship (CL-03)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="card-header">
+                            <h3>Personal Information</h3>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group flex-1">
+                                <label>First Name</label>
+                                <input type="text" class="form-control" value="Juan" readonly>
+                            </div>
+                            <div class="form-group flex-1">
+                                <label>Last Name</label>
+                                <input type="text" class="form-control" value="Dela Cruz" readonly>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group flex-1">
+                                <label>Email</label>
+                                <input type="email" class="form-control" value="juan@example.com" readonly>
+                            </div>
+                            <div class="form-group flex-1">
+                                <label>Phone Number</label>
+                                <input type="tel" class="form-control" value="09991234567" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Date of Birth</label>
+                            <input type="text" class="form-control" value="01/01/2005" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label>Street Address</label>
+                            <input type="text" class="form-control" value="789 Mabini St" readonly>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group flex-1">
+                                <label>City</label>
+                                <input type="text" class="form-control" value="Makati City" readonly>
+                            </div>
+                            <div class="form-group flex-1">
+                                <label>State / Region</label>
+                                <input type="text" class="form-control" value="Metro Manila" readonly>
+                            </div>
+                            <div class="form-group flex-1">
+                                <label>Zip Code</label>
+                                <input type="text" class="form-control" value="1200" readonly>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="card-header">
+                            <h3>Academic Information</h3>
+                        </div>
+                        <div class="form-group">
+                            <label>Current School/University</label>
+                            <input type="text" class="form-control" value="SD University" readonly>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group flex-1">
+                                <label>GPA</label>
+                                <input type="text" class="form-control" value="3.50" readonly>
+                            </div>
+                            <div class="form-group flex-1">
+                                <label>Grade Level</label>
+                                <select class="form-control" disabled>
+                                    <option selected>1st Year</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Intended Major/Field of Study</label>
+                            <input type="text" class="form-control" value="Information Technology" readonly>
+                        </div>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="card-header">
+                            <h3>Documents</h3>
+                        </div>
+                        <div class="form-group">
+                            <label>Official Transcript (PDF)</label>
+                            <div class="form-control document-view">
+                                <span class="doc-name">J_DelaCruz_Transcript.pdf</span>
+                                <a href="#" class="doc-link">Open File</a>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Letter of Recommendation (PDF)</label>
+                            <div class="form-control document-view">
+                                <span class="doc-name">J_DelaCruz_Recommendation.pdf</span>
+                                <a href="#" class="doc-link">Open File</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-actions admin-review-actions">
+                        <a href="#" class="action-btn reject-btn">Reject</a>
+                        <a href="#" class="action-btn process-btn">Process</a>
+                        <a href="#" class="action-btn approve-btn">Approve</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
